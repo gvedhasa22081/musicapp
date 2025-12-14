@@ -1,1 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Listen By GVS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- APP HEADER -->
+  <header class="app-header">
+    <h1>Listen By <span>GVS</span></h1>
+  </header>
+
+  <!-- TAB NAVIGATION -->
+  <nav class="tabs">
+    <button class="tab active" data-tab="home">Home</button>
+    <button class="tab" data-tab="liked">Liked</button>
+    <button class="tab" data-tab="playlists">Playlists</button>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main class="content">
+
+    <!-- HOME TAB -->
+    <section class="tab-content active" id="home">
+      <h2>All Songs</h2>
+      <div class="song-list" id="songList"></div>
+    </section>
+
+    <!-- LIKED TAB -->
+    <section class="tab-content" id="liked">
+      <h2>Liked Songs</h2>
+      <p class="empty-text">No liked songs yet</p>
+    </section>
+
+    <!-- PLAYLIST TAB -->
+    <section class="tab-content" id="playlists">
+      <h2>Your Playlists</h2>
+      <div class="playlist-card">
+        <div class="playlist-cover"></div>
+        <div>
+          <h3>Chill Vibes</h3>
+          <p>0 songs</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- MINI PLAYER -->
+  <div class="mini-player" id="miniPlayer">
+    <div class="mini-left">
+      <div class="mini-poster" id="miniPoster"></div>
+      <div class="mini-info">
+        <span id="miniTitle">Select a song</span>
+        <small id="miniArtist">Listen By GVS</small>
+      </div>
+    </div>
+
+    <div class="mini-controls">
+      <button id="prevBtn">⏮</button>
+      <button id="playBtn">▶</button>
+      <button id="nextBtn">⏭</button>
+    </div>
+  </div>
+
+  <!-- AUDIO -->
+  <audio id="audio"></audio>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
 
