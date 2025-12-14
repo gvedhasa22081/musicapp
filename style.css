@@ -1,1 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI";
+}
+
+body {
+  background: linear-gradient(180deg, #0b0b0b, #121212);
+  color: #fff;
+  padding-bottom: 90px;
+}
+
+/* HEADER */
+.app-header {
+  text-align: center;
+  padding: 18px;
+}
+
+.app-header h1 {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.app-header span {
+  color: #1db954;
+}
+
+/* TABS */
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.tab {
+  padding: 8px 18px;
+  border-radius: 20px;
+  border: none;
+  background: #222;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.tab.active {
+  background: #1db954;
+  color: #000;
+}
+
+/* CONTENT */
+.content {
+  padding: 16px;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+h2 {
+  margin-bottom: 12px;
+}
+
+/* SONG LIST */
+.song-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.song-card {
+  display: flex;
+  align-items: center;
+  background: #1a1a1a;
+  padding: 10px;
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+.song-poster {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  margin-right: 12px;
+}
+
+.song-info h3 {
+  font-size: 15px;
+}
+
+.song-info p {
+  font-size: 12px;
+  color: #aaa;
+}
+
+/* PLAYLIST */
+.playlist-card {
+  display: flex;
+  gap: 12px;
+  background: #1a1a1a;
+  padding: 12px;
+  border-radius: 14px;
+}
+
+.playlist-cover {
+  width: 54px;
+  height: 54px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #1db954, #0f5132);
+}
+
+/* MINI PLAYER */
+.mini-player {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #181818;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 14px;
+  border-top: 1px solid #333;
+}
+
+.mini-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mini-poster {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #333;
+  background-size: cover;
+  background-position: center;
+}
+
+.mini-info span {
+  font-size: 14px;
+}
+
+.mini-info small {
+  color: #aaa;
+  font-size: 11px;
+}
+
+.mini-controls button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* EMPTY */
+.empty-text {
+  color: #777;
+  font-size: 14px;
+}
 
